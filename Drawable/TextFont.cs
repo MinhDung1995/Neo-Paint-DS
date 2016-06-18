@@ -7,17 +7,23 @@ namespace IDrawable
 {
     public class TextFont
     {
-        private int _name;
+        private string _name;
 
-        public int Name
+        public string Name
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _name;
             }
             set
             {
+                _name = value;
             }
+        }
+
+        public TextFont(string name)
+        {
+            _name = name;
         }
     }
 }

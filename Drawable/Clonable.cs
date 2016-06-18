@@ -7,8 +7,8 @@ namespace IDrawable
 {
     public interface Clonable
     {
-        void Clone();
+        Clonable Clone();
 
-        void GetOriginalInstance();
+        Clonable GetOriginalInstance();
     }
 }

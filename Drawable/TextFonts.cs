@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 
@@ -7,22 +9,23 @@ namespace IDrawable
 {
     public class TextFonts
     {
-        private int _fontList;
+        private static List<TextFont> _fontList;
 
-        public int Font
+        public static List<TextFont> GetFontList()
         {
-            get
+            if (_fontList == null)
             {
-                throw new System.NotImplementedException();
+                InstalledFontCollection installedFontCollection = new InstalledFontCollection();
+                FontFamily[] families = installedFontCollection.Families;
+                _fontList = new List<TextFont>();
+                foreach (FontFamily ff in families)
+                {
+                    TextFont tf = new TextFont(ff.Name);
+                    _fontList.Add(tf);
+                }
             }
-            set
-            {
-            }
-        }
 
-        public void GetFontList()
-        {
-            throw new System.NotImplementedException();
+            return _fontList;
         }
     }
 }
