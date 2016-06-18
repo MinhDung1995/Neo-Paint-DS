@@ -42,7 +42,8 @@
   <ItemGroup>
     <Compile Include="BackgroundColorChangable.cs" />
     <Compile Include="BorderChangable.cs" />
-    <Compile Include="BorderDrawableObject.cs" />
+    <Compile Include="Border.cs" />
+    <Compile Include="BorderStyle.cs" />
     <Compile Include="BorderStyleChangable.cs" />
     <Compile Include="BorderThicknessChangable.cs" />
     <Compile Include="Brush.cs" />
@@ -59,10 +60,10 @@
     <Compile Include="Point2D.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RadialBrush.cs" />
-    <Compile Include="Shape.cs" />
+    <Compile Include="DrawableShape.cs" />
     <Compile Include="SolidBrush.cs" />
     <Compile Include="TextBrushChangable.cs" />
-    <Compile Include="TextDrawable.cs" />
+    <Compile Include="DrawableText.cs" />
     <Compile Include="TextFont.cs" />
     <Compile Include="TextFontChangable.cs" />
     <Compile Include="TextFonts.cs" />

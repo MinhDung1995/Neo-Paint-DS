@@ -36,45 +36,60 @@ namespace IDrawable
                 _border = value;
             }
         }
-    
-        public List<Point2D> Draw(int startX, int startY, int endX, int endY)
+        public Point2D StartPoint
         {
-            throw new NotImplementedException();
+            get
+            {
+                return _startPoint;
+            }
         }
 
-        public void Clone()
+        public Point2D EndPoint
         {
-            throw new NotImplementedException();
+            get
+            {
+                return _endPoint;
+            }
         }
 
-        public void GetOriginalInstance()
-        {
-            throw new NotImplementedException();
-        }
+        // Hàm nhận vào 2 điểm: trái trên và phải dưới
+        // Trả về danh sách các điểm của hình được vẽ.
+        public abstract List<Point2D> Draw(int startX, int startY, int endX, int endY);
 
-        public void ChangeBorderBrush(int newBrush)
+        // Trả về bản sao tuyệt đối (Vị trí, tính chất,..)
+        public abstract void Clone();
+
+        // Trả về bản sao tương đối, không bao gồm vị trí và kích thước
+        // Sao chép các thuộc tính như độ dày border, nền 
+        public abstract void GetOriginalInstance();
+
+        // Thay đổi màu border
+        public virtual void ChangeBorderBrush(Brush newBrush)
         {
             _border.Brush = newBrush;
         }
 
-        public void ChangeBorderThickness(int newThickness)
+        // Thay đổi độ dày border
+        public virtual void ChangeBorderThickness(double thickness)
         {
-            _border.Thickness = newThickness;
+            if (thickness >= 0)
+                _border.Thickness = thickness;
         }
 
-        public void ChangeBorderStyle(int newStyle)
+        // Thay đổi kiểu border
+        public virtual void ChangeBorderStyle(BorderStyle style)
         {
-            _border.Style = newStyle;
+            if (style != null)
+                _border.Style = style;
         }
 
-        public void ChangeBackgroundBrush(Brush newBrush)
+        // Thay đổi màu nền 
+        public virtual void ChangeBackgroundBrush(Brush newBrush)
         {
             _backgroundBrush = newBrush;
         }
 
-        public string GetDrawableType()
-        {
-            return "DrawableObject";
-        }
+        // Kiểu đối tượng vẽ
+        public abstract string GetDrawableType();
     }
 }

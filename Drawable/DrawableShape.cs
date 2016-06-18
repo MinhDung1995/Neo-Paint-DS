@@ -7,5 +7,10 @@ namespace IDrawable
 {
     public abstract class DrawableShape : DrawableObject
     {
+        // Kiểu đối tượng vẽ
+        public override string GetDrawableType()
+        {
+            return "Drawable Shape";
+        }
     }
 }

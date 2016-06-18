@@ -5,10 +5,11 @@ using System.Text;
 
 namespace IDrawable
 {
-    public interface TextBrushChangable
+    public enum BorderStyle
     {
-        void ChangeTextBrush(Brush newBrush);
+        Solid,
+        Dashed,
+        Chained,
+        Dotted
     }
-
-
 }

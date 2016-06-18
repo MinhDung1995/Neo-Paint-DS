@@ -7,6 +7,6 @@ namespace IDrawable
 {
     public interface BorderBrushChangable
     {
-        void ChangeBorderBrush(int newBrush);
+        void ChangeBorderBrush(Brush newBrush);
     }
 }

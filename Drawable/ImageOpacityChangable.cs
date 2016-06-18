@@ -7,6 +7,6 @@ namespace IDrawable
 {
     public interface ImageOpacityChangable
     {
-        void ChangeImageOpacity();
+        void ChangeImageOpacity(double opacity);
     }
 }

@@ -7,17 +7,20 @@ namespace IDrawable
 {
     public abstract class DrawablePicture : DrawableObject, BorderChangable, ImageChangable
     {
-        private int _bitmap;
-        private int _opacity;
+        protected int _bitmap;
+        protected double _opacity;
+        protected DrawableShape _frame;
 
         public int Bitmap
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _bitmap;
             }
+
             set
             {
+                _bitmap = value;
             }
         }
 
@@ -25,32 +28,30 @@ namespace IDrawable
         {
             get
             {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
+                return _frame;
             }
         }
 
-        public int Opacity
+        public double Opacity
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _opacity;
             }
             set
             {
+                if (_opacity >= 0)
+                    _opacity = value;
             }
         }
 
-        public void ChangeBorder()
+        public void ChangeBorder(DrawableShape frame)
         {
-            throw new NotImplementedException();
+            _frame = frame;
         }
 
-        public void ChangeImage()
+        public void ChangeImage(int bitmap)
         {
-            throw new NotImplementedException();
         }
     }
 }
