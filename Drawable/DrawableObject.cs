@@ -5,7 +5,8 @@ using System.Text;
 
 namespace IDrawable
 {
-    public abstract class DrawableObject : Drawable, Clonable, BorderBrushChangable, BorderThicknessChangable, BorderStyleChangable, BackgroundBrushChangable
+    public abstract class DrawableObject : Drawable, Clonable, BorderBrushChangable, 
+        BorderThicknessChangable, BorderStyleChangable, BackgroundBrushChangable
     {
         private Point2D _startPoint;
         private Point2D _endPoint;
@@ -16,10 +17,11 @@ namespace IDrawable
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _backgroundBrush;
             }
             set
             {
+                _backgroundBrush = value;
             }
         }
 
@@ -27,10 +29,11 @@ namespace IDrawable
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _border;
             }
             set
             {
+                _border = value;
             }
         }
     
@@ -49,29 +52,29 @@ namespace IDrawable
             throw new NotImplementedException();
         }
 
-        public void ChangeBorderBrush()
+        public void ChangeBorderBrush(int newBrush)
         {
-            throw new NotImplementedException();
+            _border.Brush = newBrush;
         }
 
-        public void ChangeBorderThickness()
+        public void ChangeBorderThickness(int newThickness)
         {
-            throw new NotImplementedException();
+            _border.Thickness = newThickness;
         }
 
-        public void ChangeBorderStyle()
+        public void ChangeBorderStyle(int newStyle)
         {
-            throw new NotImplementedException();
+            _border.Style = newStyle;
         }
 
-        public void ChangeBackgroundBrush()
+        public void ChangeBackgroundBrush(Brush newBrush)
         {
-            throw new NotImplementedException();
+            _backgroundBrush = newBrush;
         }
 
-        public void GetDrawableType()
+        public string GetDrawableType()
         {
-            throw new System.NotImplementedException();
+            return "DrawableObject";
         }
     }
 }

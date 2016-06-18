@@ -7,6 +7,6 @@ namespace IDrawable
 {
     public interface BorderThicknessChangable
     {
-        void ChangeBorderThickness();
+        void ChangeBorderThickness(int newThickness);
     }
 }

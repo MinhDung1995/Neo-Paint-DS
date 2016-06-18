@@ -16,10 +16,11 @@ namespace IDrawable
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _r;
             }
             set
             {
+                _r = value;
             }
         }
 
@@ -27,10 +28,11 @@ namespace IDrawable
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _b;
             }
             set
             {
+                _b = value;
             }
         }
 
@@ -38,10 +40,11 @@ namespace IDrawable
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _g;
             }
             set
             {
+                _g = value;
             }
         }
 
@@ -49,31 +52,42 @@ namespace IDrawable
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _a;
             }
             set
             {
+                _a = value;
             }
         }
 
-        public void AssignValue()
+        public void AssignValue(Byte r, Byte g, Byte b, Byte a)
         {
-            throw new System.NotImplementedException();
+            R = r;
+            G = g;
+            B = b;
+            A = a;
         }
 
-        public void Equal()
+        public bool Equals(Color c)
         {
-            throw new System.NotImplementedException();
+            return R == c.R && G == c.G && B == c.B && A == c.A; 
         }
 
-        public Color CreateFromRGB(Byte r, Byte g, Byte b)
+        public static Color CreateFromRGB(Byte r, Byte g, Byte b)
         {
-            throw new System.NotImplementedException();
+            Color result = new Color();
+            result.R = r;
+            result.G = g;
+            result.B = b;
+            result.A = 255;
+            return result;
         }
 
-        public Color CreateFromRGBA(Byte r, Byte g, Byte b, Byte a)
+        public static Color CreateFromRGBA(Byte r, Byte g, Byte b, Byte a)
         {
-            throw new System.NotImplementedException();
+            Color result = CreateFromRGB(r, g, b);
+            result.A = a;
+            return result;
         }
     }
 }

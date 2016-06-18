@@ -7,6 +7,6 @@ namespace IDrawable
 {
     public interface BorderStyleChangable
     {
-        void ChangeBorderStyle();
+        void ChangeBorderStyle(int newStyle);
     }
 }

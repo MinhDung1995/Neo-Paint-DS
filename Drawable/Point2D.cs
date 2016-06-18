@@ -7,10 +7,10 @@ namespace IDrawable
 {
     public class Point2D
     {
-        private Int32 _x;
-        private Int32 _y;
+        private double _x;
+        private double _y;
 
-        public Int32 X
+        public double X
         {
             get
             {
@@ -22,7 +22,7 @@ namespace IDrawable
             }
         }
 
-        public Int32 Y
+        public double Y
         {
             get
             {
@@ -40,7 +40,7 @@ namespace IDrawable
             _y = 0;
         }
 
-        public Point2D(Int32 x, Int32 y)
+        public Point2D(double x, double y)
         {
             _x = x;
             _y = y;

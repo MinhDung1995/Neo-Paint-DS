@@ -7,6 +7,6 @@ namespace IDrawable
 {
     public interface Drawable
     {
-        Object Draw(int startX, int startY, int endX, int endY);
+        List<Point2D> Draw(int startX, int startY, int endX, int endY);
     }
 }

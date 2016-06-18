@@ -7,5 +7,6 @@ namespace IDrawable
 {
     public interface Brush
     {
+
     }
 }

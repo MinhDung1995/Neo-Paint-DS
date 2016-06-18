@@ -7,6 +7,6 @@ namespace IDrawable
 {
     public interface BackgroundBrushChangable
     {
-        void ChangeBackgroundBrush();
+        void ChangeBackgroundBrush(Brush newBrush);
     }
 }
