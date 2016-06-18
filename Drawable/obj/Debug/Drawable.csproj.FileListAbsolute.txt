@@ -1,5 +1,0 @@
-C:\Users\ADMIN\Desktop\Neo Paint DS\Drawable\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\ADMIN\Desktop\Neo Paint DS\Drawable\bin\Debug\IDrawable.dll
-C:\Users\ADMIN\Desktop\Neo Paint DS\Drawable\bin\Debug\IDrawable.pdb
-C:\Users\ADMIN\Desktop\Neo Paint DS\Drawable\obj\Debug\IDrawable.dll
-C:\Users\ADMIN\Desktop\Neo Paint DS\Drawable\obj\Debug\IDrawable.pdb

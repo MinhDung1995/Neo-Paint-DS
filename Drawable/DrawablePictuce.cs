@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace IDrawable
+namespace NeoDrawable
 {
     public abstract class DrawablePicture : DrawableObject, BorderChangable, ImageChangable
     {

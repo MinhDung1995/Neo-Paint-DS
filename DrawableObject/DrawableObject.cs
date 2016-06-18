@@ -1,0 +1,95 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace NeoDrawable
+{
+    public abstract class DrawableObject : Drawable, Clonable, BorderBrushChangable, 
+        BorderThicknessChangable, BorderStyleChangable, BackgroundBrushChangable
+    {
+        private Point2D _startPoint;
+        private Point2D _endPoint;
+        private Brush _backgroundBrush;
+        private Border _border;
+
+        public Brush BackgroundBrush
+        {
+            get
+            {
+                return _backgroundBrush;
+            }
+            set
+            {
+                _backgroundBrush = value;
+            }
+        }
+
+        public Border Border
+        {
+            get
+            {
+                return _border;
+            }
+            set
+            {
+                _border = value;
+            }
+        }
+        public Point2D StartPoint
+        {
+            get
+            {
+                return _startPoint;
+            }
+        }
+
+        public Point2D EndPoint
+        {
+            get
+            {
+                return _endPoint;
+            }
+        }
+
+        // Hàm nhận vào 2 điểm: trái trên và phải dưới
+        // Trả về danh sách các điểm của hình được vẽ.
+        public abstract List<Point2D> Draw(int startX, int startY, int endX, int endY);
+
+        // Trả về bản sao tuyệt đối (Vị trí, tính chất,..)
+        public abstract void Clone();
+
+        // Trả về bản sao tương đối, không bao gồm vị trí và kích thước
+        // Sao chép các thuộc tính như độ dày border, nền 
+        public abstract void GetOriginalInstance();
+
+        // Thay đổi màu border
+        public virtual void ChangeBorderBrush(Brush newBrush)
+        {
+            _border.Brush = newBrush;
+        }
+
+        // Thay đổi độ dày border
+        public virtual void ChangeBorderThickness(double thickness)
+        {
+            if (thickness >= 0)
+                _border.Thickness = thickness;
+        }
+
+        // Thay đổi kiểu border
+        public virtual void ChangeBorderStyle(BorderStyle style)
+        {
+            if (style != null)
+                _border.Style = style;
+        }
+
+        // Thay đổi màu nền 
+        public virtual void ChangeBackgroundBrush(Brush newBrush)
+        {
+            _backgroundBrush = newBrush;
+        }
+
+        // Kiểu đối tượng vẽ
+        public abstract string GetDrawableType();
+    }
+}

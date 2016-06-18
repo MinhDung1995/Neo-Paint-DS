@@ -5,7 +5,7 @@ using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 
-namespace IDrawable
+namespace NeoDrawable
 {
     public class TextFonts
     {
