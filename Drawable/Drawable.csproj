@@ -8,7 +8,7 @@
     <ProjectGuid>{DA15D854-5A3E-4ACB-942C-F2B3A5131ADC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IDrawable</RootNamespace>
+    <RootNamespace>NeoDrawable</RootNamespace>
     <AssemblyName>IDrawable</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackgroundColorChangable.cs" />
+    <Compile Include="BorderBrushChangable.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="BorderChangable.cs" />
     <Compile Include="Border.cs" />
     <Compile Include="BorderStyle.cs" />
@@ -52,7 +56,6 @@
     <Compile Include="Drawable.cs" />
     <Compile Include="DrawableObject.cs" />
     <Compile Include="DrawablePictuce.cs" />
-    <Compile Include="BorderBrushChangable.cs" />
     <Compile Include="GradientBrush.cs" />
     <Compile Include="ImageChangable.cs" />
     <Compile Include="ImageOpacityChangable.cs" />

@@ -1,0 +1,15 @@
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\DrawableShape.dll
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\DrawableShape.pdb
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\Brush.dll
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\Color.dll
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\DrawableObject.dll
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\InterfaceContract.dll
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\Point2D.dll
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\Brush.pdb
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\Color.pdb
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\DrawableObject.pdb
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\InterfaceContract.pdb
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\Point2D.pdb
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\obj\Debug\DrawableShape.dll
+C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\obj\Debug\DrawableShape.pdb
