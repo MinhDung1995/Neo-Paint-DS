@@ -5,9 +5,9 @@ using System.Text;
 
 namespace NeoDrawable
 {
-    public class DrawableSquare : DrawableShape
+    public class DrawableCircle : DrawableShape
     {
-        public DrawableSquare(Point2D startPoint, Point2D endPoint,
+        public DrawableCircle(Point2D startPoint, Point2D endPoint,
             Brush backgroundBrush, Border border)
         {
             _startPoint = startPoint;
@@ -16,7 +16,7 @@ namespace NeoDrawable
             _border = border;
         }
 
-        public DrawableSquare(Brush backgroundBrush, Border border)
+        public DrawableCircle(Brush backgroundBrush, Border border)
         {
             _backgroundBrush = backgroundBrush;
             _border = border;
@@ -24,7 +24,7 @@ namespace NeoDrawable
 
         public override Clonable Clone()
         {
-            return new DrawableSquare(_startPoint, _endPoint, _backgroundBrush, _border);
+            return new DrawableCircle(_startPoint, _endPoint, _backgroundBrush, _border);
         }
 
         public override List<Point2D> Draw(double startX, double startY, double endX, double endY)
@@ -39,6 +39,7 @@ namespace NeoDrawable
                     end = new Point2D(endX, endY + (height - width));
                 else
                     end = new Point2D(endX, endY - (height - width));
+                height = width;
             }
             else
             {
@@ -50,16 +51,14 @@ namespace NeoDrawable
 
             return new List<Point2D>()
             {
-                new Point2D(startX, startY),
-                new Point2D(startX, end.Y),
-                end,
-                new Point2D(end.X, startY)
+                new Point2D((startX + end.X)/ 2, (startY + end.Y)/2), // tâm
+                new Point2D(Math.Abs(startX - end.X), Math.Abs(startX - end.X)) // đường kính
             };
         }
 
         public override Clonable GetOriginalInstance()
         {
-            return new DrawableSquare(_backgroundBrush, _border);
+            return new DrawableCircle(_backgroundBrush, _border);
         }
     }
 }

@@ -5,9 +5,9 @@ using System.Text;
 
 namespace NeoDrawable
 {
-    public class DrawablePentagon : DrawableShape
+    public class DrawableHexagon : DrawableShape
     {
-        public DrawablePentagon(Point2D startPoint, Point2D endPoint,
+        public DrawableHexagon(Point2D startPoint, Point2D endPoint,
             Brush backgroundBrush, Border border)
         {
             _startPoint = startPoint;
@@ -16,7 +16,7 @@ namespace NeoDrawable
             _border = border;
         }
 
-        public DrawablePentagon(Brush backgroundBrush, Border border)
+        public DrawableHexagon(Brush backgroundBrush, Border border)
         {
             _backgroundBrush = backgroundBrush;
             _border = border;
@@ -24,7 +24,7 @@ namespace NeoDrawable
 
         public override Clonable Clone()
         {
-            return new DrawablePentagon(_startPoint, _endPoint, _backgroundBrush, _border);
+            return new DrawableHexagon(_startPoint, _endPoint, _backgroundBrush, _border);
         }
 
         public override List<Point2D> Draw(double startX, double startY, double endX, double endY)
@@ -32,19 +32,19 @@ namespace NeoDrawable
             double dX = endX - startX;
             double dY = endY - startY;
 
-            return new List<Point2D>()
-            {
+            return new List<Point2D>() {
                 new Point2D((endX + startX) / 2, startY),
-                new Point2D(endX, startY + 0.4 * dY),
-                new Point2D(startX + 0.8 * dX, endY),
-                new Point2D(startX + 0.2 * dX, endY),
-                new Point2D(startX, startY + 0.4 * dY),
+                new Point2D(endX, startY + 0.25 * dY),
+                new Point2D(endX, startY + 0.75 * dY),
+                new Point2D((endX + startX) / 2, endY),
+                new Point2D(startX, startY + 0.75 * dY),
+                new Point2D(startX, startY + 0.25 * dY)
             };
         }
 
         public override Clonable GetOriginalInstance()
         {
-            return new DrawablePentagon(_backgroundBrush, _border);
+            return new DrawableHexagon(_backgroundBrush, _border);
         }
     }
 }

@@ -42,9 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackgroundColorChangable.cs" />
-    <Compile Include="BorderBrushChangable.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="BorderChangable.cs" />
     <Compile Include="Border.cs" />
     <Compile Include="BorderStyle.cs" />
@@ -54,8 +51,21 @@
     <Compile Include="Clonable.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="Drawable.cs" />
+    <Compile Include="DrawableCircle.cs" />
+    <Compile Include="DrawableEllipse.cs" />
+    <Compile Include="DrawableHexagon.cs" />
+    <Compile Include="DrawableHexagram.cs" />
+    <Compile Include="DrawableHorizontalArrow.cs" />
+    <Compile Include="DrawableLine.cs" />
     <Compile Include="DrawableObject.cs" />
+    <Compile Include="DrawablePentagon.cs" />
     <Compile Include="DrawablePictuce.cs" />
+    <Compile Include="BorderBrushChangable.cs" />
+    <Compile Include="DrawableRectangle.cs" />
+    <Compile Include="DrawableSquare.cs" />
+    <Compile Include="DrawableStar.cs" />
+    <Compile Include="DrawableTriangle.cs" />
+    <Compile Include="DrawableVerticalArrow.cs" />
     <Compile Include="GradientBrush.cs" />
     <Compile Include="ImageChangable.cs" />
     <Compile Include="ImageOpacityChangable.cs" />
