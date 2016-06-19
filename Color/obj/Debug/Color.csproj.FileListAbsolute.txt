@@ -12,3 +12,4 @@ D:\Neo-Paint-DS\Color\bin\Debug\Color.dll
 D:\Neo-Paint-DS\Color\bin\Debug\Color.pdb
 D:\Neo-Paint-DS\Color\obj\Debug\Color.dll
 D:\Neo-Paint-DS\Color\obj\Debug\Color.pdb
+D:\Neo-Paint-DS\Color\obj\Debug\Color.csprojResolveAssemblyReference.cache

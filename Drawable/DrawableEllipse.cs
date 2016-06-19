@@ -55,5 +55,10 @@ namespace NeoDrawable
         {
             return "Drawable Ellipse";
         }
+
+        public override string ToString()
+        {
+            return "Ellipse";
+        }
     }
 }

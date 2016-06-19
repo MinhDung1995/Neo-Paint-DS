@@ -59,5 +59,10 @@ namespace NeoDrawable
         {
             return "Drawable Hexagon";
         }
+
+        public override string ToString()
+        {
+            return "Hexagon";
+        }
     }
 }

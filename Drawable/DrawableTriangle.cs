@@ -55,5 +55,10 @@ namespace NeoDrawable
         {
             return "Drawable Triangle";
         }
+
+        public override string ToString()
+        {
+            return "Triangle";
+        }
     }
 }

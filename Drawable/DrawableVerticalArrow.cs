@@ -60,5 +60,10 @@ namespace NeoDrawable
         {
             return "Drawable Vertical Arrow";
         }
+
+        public override string ToString()
+        {
+            return "Vertical Arrow";
+        }
     }
 }

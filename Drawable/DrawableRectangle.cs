@@ -56,5 +56,10 @@ namespace NeoDrawable
         {
             return "Drawable Rectangle";
         }
+
+        public override string ToString()
+        {
+            return "Rectangle";
+        }
     }
 }

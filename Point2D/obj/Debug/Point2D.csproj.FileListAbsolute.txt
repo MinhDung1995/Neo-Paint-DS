@@ -12,3 +12,4 @@ D:\Neo-Paint-DS\Point2D\bin\Debug\Point2D.dll
 D:\Neo-Paint-DS\Point2D\bin\Debug\Point2D.pdb
 D:\Neo-Paint-DS\Point2D\obj\Debug\Point2D.dll
 D:\Neo-Paint-DS\Point2D\obj\Debug\Point2D.pdb
+D:\Neo-Paint-DS\Point2D\obj\Debug\Point2D.csprojResolveAssemblyReference.cache

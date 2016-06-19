@@ -59,5 +59,10 @@ namespace NeoDrawable
         {
             return "Drawable Pentagon";
         }
+
+        public override string ToString()
+        {
+            return "Pentagon";
+        }
     }
 }

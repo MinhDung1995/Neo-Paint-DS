@@ -49,5 +49,10 @@ namespace NeoDrawable
         {
             return "Drawable Line";
         }
+
+        public override string ToString()
+        {
+            return "Line";
+        }
     }
 }

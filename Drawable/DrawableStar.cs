@@ -63,5 +63,10 @@ namespace NeoDrawable
         {
             return "Drawable Star";
         }
+
+        public override string ToString()
+        {
+            return "Star";
+        }
     }
 }

@@ -66,5 +66,10 @@ namespace NeoDrawable
         {
             return "Drawable Hexagram";
         }
+
+        public override string ToString()
+        {
+            return "Hexagram";
+        }
     }
 }

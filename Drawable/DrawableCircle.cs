@@ -73,5 +73,10 @@ namespace NeoDrawable
         {
             return "Drawable Circle";
         }
+
+        public override string ToString()
+        {
+            return "Circle";
+        }
     }
 }

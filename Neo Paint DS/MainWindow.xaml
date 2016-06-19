@@ -11,6 +11,6 @@
                 Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Panel.ZIndex="0" 
                 ClipToBounds="True" Margin="0,46,0,0" PreviewMouseLeftButtonDown="canvas_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="canvas_PreviewMouseLeftButtonUp" PreviewMouseMove="canvas_PreviewMouseMove" />
         <Label x:Name="label" Content="Shapes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.337,0.538"/>
-        <ComboBox x:Name="cbxShapes" HorizontalAlignment="Left" Margin="63,10,0,0" VerticalAlignment="Top" Width="286"/>
+        <ComboBox x:Name="cbxShapes" HorizontalAlignment="Left" Margin="63,10,0,0" VerticalAlignment="Top" Width="142"/>
     </Grid>
 </Window>
