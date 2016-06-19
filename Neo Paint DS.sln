@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drawable", "Drawable\Drawable.csproj", "{DA15D854-5A3E-4ACB-942C-F2B3A5131ADC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Point2D", "Point2D\Point2D.csproj", "{4B287128-FA47-4F16-8DF8-3A473E04022B}"
@@ -18,6 +20,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawablePicture", "DrawablePicture\DrawablePicture.csproj", "{E130618A-E9DD-416A-B4C7-0CCFF061CC41}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawableText", "DrawableText\DrawableText.csproj", "{9F75AA2A-707D-4FE2-ADC1-D01E9EC69B05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drawing", "Drawing\Drawing.csproj", "{089BC9D6-7C44-4491-A1E2-60B3AE56B7D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingShapes", "DrawingShape\DrawingShapes.csproj", "{970EF785-9389-4C4C-B7AC-6B49267DB70B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +67,14 @@ Global
 		{9F75AA2A-707D-4FE2-ADC1-D01E9EC69B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F75AA2A-707D-4FE2-ADC1-D01E9EC69B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F75AA2A-707D-4FE2-ADC1-D01E9EC69B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089BC9D6-7C44-4491-A1E2-60B3AE56B7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089BC9D6-7C44-4491-A1E2-60B3AE56B7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089BC9D6-7C44-4491-A1E2-60B3AE56B7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089BC9D6-7C44-4491-A1E2-60B3AE56B7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{970EF785-9389-4C4C-B7AC-6B49267DB70B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970EF785-9389-4C4C-B7AC-6B49267DB70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970EF785-9389-4C4C-B7AC-6B49267DB70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970EF785-9389-4C4C-B7AC-6B49267DB70B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

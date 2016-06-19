@@ -1,16 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DA15D854-5A3E-4ACB-942C-F2B3A5131ADC}</ProjectGuid>
+    <ProjectGuid>{089BC9D6-7C44-4491-A1E2-60B3AE56B7D5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NeoDrawable</RootNamespace>
-    <AssemblyName>IDrawable</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AssemblyName>Drawing</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -31,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -38,30 +38,12 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DrawableCircle.cs" />
-    <Compile Include="DrawableEllipse.cs" />
-    <Compile Include="DrawableHexagon.cs" />
-    <Compile Include="DrawableHexagram.cs" />
-    <Compile Include="DrawableHorizontalArrow.cs" />
-    <Compile Include="DrawableLine.cs" />
-    <Compile Include="DrawablePentagon.cs" />
-    <Compile Include="DrawableRectangle.cs" />
-    <Compile Include="DrawableSquare.cs" />
-    <Compile Include="DrawableStar.cs" />
-    <Compile Include="DrawableTriangle.cs" />
-    <Compile Include="DrawableVerticalArrow.cs" />
+    <Compile Include="Drawing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextFont.cs" />
-    <Compile Include="TextFonts.cs" />
-    <Compile Include="TextManager.cs" />
-    <Compile Include="TextStyle.cs" />
-    <Compile Include="TextStyles.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Brush\Brush.csproj">
@@ -71,14 +53,6 @@
     <ProjectReference Include="..\DrawableObject\DrawableObject.csproj">
       <Project>{b4fc8693-a61e-4fae-93bc-c46f8027dc75}</Project>
       <Name>DrawableObject</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DrawableShape\DrawableShape.csproj">
-      <Project>{af0f6bec-d5d7-48a8-b237-d00ddcac745e}</Project>
-      <Name>DrawableShape</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\InterfaceContract\InterfaceContract.csproj">
-      <Project>{a69d7c57-f921-4782-85b9-e30c6d8720c2}</Project>
-      <Name>InterfaceContract</Name>
     </ProjectReference>
     <ProjectReference Include="..\Point2D\Point2D.csproj">
       <Project>{4b287128-fa47-4f16-8df8-3a473e04022b}</Project>

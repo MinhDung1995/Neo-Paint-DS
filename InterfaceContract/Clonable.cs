@@ -7,8 +7,8 @@ namespace NeoDrawable
 {
     public interface Clonable
     {
-        void Clone();
+        Clonable Clone();
 
-        void GetOriginalInstance();
+        Clonable GetOriginalInstance();
     }
 }

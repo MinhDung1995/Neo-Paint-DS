@@ -8,10 +8,10 @@ namespace NeoDrawable
     public abstract class DrawableObject : Drawable, Clonable, BorderBrushChangable, 
         BorderThicknessChangable, BorderStyleChangable, BackgroundBrushChangable
     {
-        private Point2D _startPoint;
-        private Point2D _endPoint;
-        private Brush _backgroundBrush;
-        private Border _border;
+        protected Point2D _startPoint;
+        protected Point2D _endPoint;
+        protected Brush _backgroundBrush;
+        protected Border _border;
 
         public Brush BackgroundBrush
         {
@@ -54,14 +54,14 @@ namespace NeoDrawable
 
         // Hàm nhận vào 2 điểm: trái trên và phải dưới
         // Trả về danh sách các điểm của hình được vẽ.
-        public abstract List<Point2D> Draw(int startX, int startY, int endX, int endY);
+        public abstract List<Point2D> Draw(double startX, double startY, double endX, double endY);
 
         // Trả về bản sao tuyệt đối (Vị trí, tính chất,..)
-        public abstract void Clone();
+        public abstract Clonable Clone();
 
         // Trả về bản sao tương đối, không bao gồm vị trí và kích thước
         // Sao chép các thuộc tính như độ dày border, nền 
-        public abstract void GetOriginalInstance();
+        public abstract Clonable GetOriginalInstance();
 
         // Thay đổi màu border
         public virtual void ChangeBorderBrush(Brush newBrush)
@@ -79,7 +79,6 @@ namespace NeoDrawable
         // Thay đổi kiểu border
         public virtual void ChangeBorderStyle(BorderStyle style)
         {
-            if (style != null)
                 _border.Style = style;
         }
 

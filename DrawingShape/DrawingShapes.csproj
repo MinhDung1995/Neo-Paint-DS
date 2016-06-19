@@ -1,16 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DA15D854-5A3E-4ACB-942C-F2B3A5131ADC}</ProjectGuid>
+    <ProjectGuid>{970EF785-9389-4C4C-B7AC-6B49267DB70B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NeoDrawable</RootNamespace>
-    <AssemblyName>IDrawable</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AssemblyName>DrawingShape</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -31,6 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -38,30 +39,24 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DrawableCircle.cs" />
-    <Compile Include="DrawableEllipse.cs" />
-    <Compile Include="DrawableHexagon.cs" />
-    <Compile Include="DrawableHexagram.cs" />
-    <Compile Include="DrawableHorizontalArrow.cs" />
-    <Compile Include="DrawableLine.cs" />
-    <Compile Include="DrawablePentagon.cs" />
-    <Compile Include="DrawableRectangle.cs" />
-    <Compile Include="DrawableSquare.cs" />
-    <Compile Include="DrawableStar.cs" />
-    <Compile Include="DrawableTriangle.cs" />
-    <Compile Include="DrawableVerticalArrow.cs" />
+    <Compile Include="DrawingCircle.cs" />
+    <Compile Include="DrawingEllipse.cs" />
+    <Compile Include="DrawingPentagon.cs" />
+    <Compile Include="DrawingHexagon.cs" />
+    <Compile Include="DrawingHexagram.cs" />
+    <Compile Include="DrawingHorizontalArrow.cs" />
+    <Compile Include="DrawingLine.cs" />
+    <Compile Include="DrawingRectangle.cs" />
+    <Compile Include="DrawingSquare.cs" />
+    <Compile Include="DrawingStar.cs" />
+    <Compile Include="DrawingTriangle.cs" />
+    <Compile Include="DrawingVerticalArrow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextFont.cs" />
-    <Compile Include="TextFonts.cs" />
-    <Compile Include="TextManager.cs" />
-    <Compile Include="TextStyle.cs" />
-    <Compile Include="TextStyles.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Brush\Brush.csproj">
@@ -76,9 +71,13 @@
       <Project>{af0f6bec-d5d7-48a8-b237-d00ddcac745e}</Project>
       <Name>DrawableShape</Name>
     </ProjectReference>
-    <ProjectReference Include="..\InterfaceContract\InterfaceContract.csproj">
-      <Project>{a69d7c57-f921-4782-85b9-e30c6d8720c2}</Project>
-      <Name>InterfaceContract</Name>
+    <ProjectReference Include="..\Drawable\Drawable.csproj">
+      <Project>{da15d854-5a3e-4acb-942c-f2b3a5131adc}</Project>
+      <Name>Drawable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drawing\Drawing.csproj">
+      <Project>{089bc9d6-7c44-4491-a1e2-60b3ae56b7d5}</Project>
+      <Name>Drawing</Name>
     </ProjectReference>
     <ProjectReference Include="..\Point2D\Point2D.csproj">
       <Project>{4b287128-fa47-4f16-8df8-3a473e04022b}</Project>
