@@ -7,6 +7,14 @@ namespace NeoDrawable
 {
     public class DrawableHexagram : DrawableShape
     {
+        public DrawableHexagram() { }
+
+        public DrawableHexagram(Point2D startPoint, Point2D endPoint)
+        {
+            _startPoint = startPoint;
+            _endPoint = endPoint;
+        }
+
         public DrawableHexagram(Point2D startPoint, Point2D endPoint,
             Brush backgroundBrush, Border border)
         {
@@ -52,6 +60,11 @@ namespace NeoDrawable
         public override Clonable GetOriginalInstance()
         {
             return new DrawableHexagram(_backgroundBrush, _border);
+        }
+
+        public override string GetDrawableType()
+        {
+            return "Drawable Hexagram";
         }
     }
 }

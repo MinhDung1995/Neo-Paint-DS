@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drawing", "Drawing\Drawing.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingShapes", "DrawingShape\DrawingShapes.csproj", "{970EF785-9389-4C4C-B7AC-6B49267DB70B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neo Paint DS", "Neo Paint DS\Neo Paint DS.csproj", "{4EBC2DC1-6879-4CD1-8D91-9EF847A9D5B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{970EF785-9389-4C4C-B7AC-6B49267DB70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{970EF785-9389-4C4C-B7AC-6B49267DB70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{970EF785-9389-4C4C-B7AC-6B49267DB70B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EBC2DC1-6879-4CD1-8D91-9EF847A9D5B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EBC2DC1-6879-4CD1-8D91-9EF847A9D5B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EBC2DC1-6879-4CD1-8D91-9EF847A9D5B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EBC2DC1-6879-4CD1-8D91-9EF847A9D5B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

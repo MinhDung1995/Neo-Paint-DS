@@ -1,0 +1,15 @@
+D:\Neo-Paint-DS\Drawing\bin\Debug\Drawing.dll
+D:\Neo-Paint-DS\Drawing\bin\Debug\Drawing.pdb
+D:\Neo-Paint-DS\Drawing\bin\Debug\Brush.dll
+D:\Neo-Paint-DS\Drawing\bin\Debug\DrawableObject.dll
+D:\Neo-Paint-DS\Drawing\bin\Debug\Point2D.dll
+D:\Neo-Paint-DS\Drawing\bin\Debug\Color.dll
+D:\Neo-Paint-DS\Drawing\bin\Debug\InterfaceContract.dll
+D:\Neo-Paint-DS\Drawing\bin\Debug\Brush.pdb
+D:\Neo-Paint-DS\Drawing\bin\Debug\DrawableObject.pdb
+D:\Neo-Paint-DS\Drawing\bin\Debug\Point2D.pdb
+D:\Neo-Paint-DS\Drawing\bin\Debug\Color.pdb
+D:\Neo-Paint-DS\Drawing\bin\Debug\InterfaceContract.pdb
+D:\Neo-Paint-DS\Drawing\obj\Debug\Drawing.csprojResolveAssemblyReference.cache
+D:\Neo-Paint-DS\Drawing\obj\Debug\Drawing.dll
+D:\Neo-Paint-DS\Drawing\obj\Debug\Drawing.pdb

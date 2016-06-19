@@ -42,6 +42,10 @@ namespace NeoDrawable
             {
                 return _startPoint;
             }
+            set
+            {
+                _startPoint = value;
+            }
         }
 
         public Point2D EndPoint
@@ -49,6 +53,10 @@ namespace NeoDrawable
             get
             {
                 return _endPoint;
+            }
+            set
+            {
+                _endPoint = value;
             }
         }
 

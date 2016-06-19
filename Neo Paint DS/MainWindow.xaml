@@ -1,0 +1,16 @@
+﻿<Window x:Class="Neo_Paint_DS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Neo_Paint_DS"
+        mc:Ignorable="d"
+        Title="Neo Paint DS (Demo)" Height="444.737" Width="607.895" ResizeMode="NoResize" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Loaded="Window_Loaded">
+    <Grid>
+        <Canvas x:Name = "canvas" HorizontalAlignment="Left" Height="370" VerticalAlignment="Top" Width="600" 
+                Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Panel.ZIndex="0" 
+                ClipToBounds="True" Margin="0,46,0,0" PreviewMouseLeftButtonDown="canvas_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="canvas_PreviewMouseLeftButtonUp" PreviewMouseMove="canvas_PreviewMouseMove" />
+        <Label x:Name="label" Content="Shapes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.337,0.538"/>
+        <ComboBox x:Name="cbxShapes" HorizontalAlignment="Left" Margin="63,10,0,0" VerticalAlignment="Top" Width="286"/>
+    </Grid>
+</Window>

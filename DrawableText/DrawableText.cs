@@ -68,10 +68,6 @@ namespace NeoDrawable
             }
         }
 
-        public void ChangeTextBrush()
-        {
-            throw new NotImplementedException();
-        }
 
         public void ChangeStyle()
         {
@@ -83,7 +79,12 @@ namespace NeoDrawable
             throw new NotImplementedException();
         }
 
-        public void ChangeTextSize()
+        public void ChangeTextBrush(Brush newBrush)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ChangeTextSize(double size)
         {
             throw new NotImplementedException();
         }

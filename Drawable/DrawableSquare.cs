@@ -7,6 +7,15 @@ namespace NeoDrawable
 {
     public class DrawableSquare : DrawableShape
     {
+        public DrawableSquare() { }
+
+        public DrawableSquare(Point2D startPoint, Point2D endPoint)
+        {
+            _startPoint = startPoint;
+            _endPoint = endPoint;
+        }
+
+
         public DrawableSquare(Point2D startPoint, Point2D endPoint,
             Brush backgroundBrush, Border border)
         {
@@ -60,6 +69,11 @@ namespace NeoDrawable
         public override Clonable GetOriginalInstance()
         {
             return new DrawableSquare(_backgroundBrush, _border);
+        }
+
+        public override string GetDrawableType()
+        {
+            return "Drawable Square";
         }
     }
 }

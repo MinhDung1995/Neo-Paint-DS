@@ -7,6 +7,14 @@ namespace NeoDrawable
 {
     public class DrawableEllipse : DrawableShape
     {
+        public DrawableEllipse() { }
+
+        public DrawableEllipse(Point2D startPoint, Point2D endPoint)
+        {
+            _startPoint = startPoint;
+            _endPoint = endPoint;
+        }
+
         public DrawableEllipse(Point2D startPoint, Point2D endPoint,
             Brush backgroundBrush, Border border)
         {
@@ -41,6 +49,11 @@ namespace NeoDrawable
         public override Clonable GetOriginalInstance()
         {
             return new DrawableEllipse(_backgroundBrush, _border);
+        }
+
+        public override string GetDrawableType()
+        {
+            return "Drawable Ellipse";
         }
     }
 }

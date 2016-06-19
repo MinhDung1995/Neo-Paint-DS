@@ -43,6 +43,24 @@
     <Compile Include="DrawableText.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Brush\Brush.csproj">
+      <Project>{97a5aea9-0586-43d3-a17d-1723fbac3ac7}</Project>
+      <Name>Brush</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DrawableObject\DrawableObject.csproj">
+      <Project>{b4fc8693-a61e-4fae-93bc-c46f8027dc75}</Project>
+      <Name>DrawableObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drawable\Drawable.csproj">
+      <Project>{da15d854-5a3e-4acb-942c-f2b3a5131adc}</Project>
+      <Name>Drawable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InterfaceContract\InterfaceContract.csproj">
+      <Project>{a69d7c57-f921-4782-85b9-e30c6d8720c2}</Project>
+      <Name>InterfaceContract</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

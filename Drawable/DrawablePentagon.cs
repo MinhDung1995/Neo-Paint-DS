@@ -7,6 +7,14 @@ namespace NeoDrawable
 {
     public class DrawablePentagon : DrawableShape
     {
+        public DrawablePentagon() { }
+
+        public DrawablePentagon(Point2D startPoint, Point2D endPoint)
+        {
+            _startPoint = startPoint;
+            _endPoint = endPoint;
+        }
+
         public DrawablePentagon(Point2D startPoint, Point2D endPoint,
             Brush backgroundBrush, Border border)
         {
@@ -45,6 +53,11 @@ namespace NeoDrawable
         public override Clonable GetOriginalInstance()
         {
             return new DrawablePentagon(_backgroundBrush, _border);
+        }
+
+        public override string GetDrawableType()
+        {
+            return "Drawable Pentagon";
         }
     }
 }

@@ -7,6 +7,15 @@ namespace NeoDrawable
 {
     public class DrawableRectangle : DrawableShape
     {
+        public DrawableRectangle() { }
+
+        public DrawableRectangle(Point2D startPoint, Point2D endPoint)
+        {
+            _startPoint = startPoint;
+            _endPoint = endPoint;
+        }
+
+
         public DrawableRectangle(Point2D startPoint, Point2D endPoint, 
             Brush backgroundBrush, Border border)
         {

@@ -9,3 +9,14 @@ C:\Users\ADMIN\Desktop\Neo Paint DS\InterfaceContract\bin\Debug\Point2D.pdb
 C:\Users\ADMIN\Desktop\Neo Paint DS\InterfaceContract\bin\Debug\Color.pdb
 C:\Users\ADMIN\Desktop\Neo Paint DS\InterfaceContract\obj\Debug\InterfaceContract.dll
 C:\Users\ADMIN\Desktop\Neo Paint DS\InterfaceContract\obj\Debug\InterfaceContract.pdb
+D:\Neo-Paint-DS\InterfaceContract\bin\Debug\InterfaceContract.dll
+D:\Neo-Paint-DS\InterfaceContract\bin\Debug\InterfaceContract.pdb
+D:\Neo-Paint-DS\InterfaceContract\bin\Debug\Brush.dll
+D:\Neo-Paint-DS\InterfaceContract\bin\Debug\Point2D.dll
+D:\Neo-Paint-DS\InterfaceContract\bin\Debug\Color.dll
+D:\Neo-Paint-DS\InterfaceContract\bin\Debug\Brush.pdb
+D:\Neo-Paint-DS\InterfaceContract\bin\Debug\Point2D.pdb
+D:\Neo-Paint-DS\InterfaceContract\bin\Debug\Color.pdb
+D:\Neo-Paint-DS\InterfaceContract\obj\Debug\InterfaceContract.csprojResolveAssemblyReference.cache
+D:\Neo-Paint-DS\InterfaceContract\obj\Debug\InterfaceContract.dll
+D:\Neo-Paint-DS\InterfaceContract\obj\Debug\InterfaceContract.pdb

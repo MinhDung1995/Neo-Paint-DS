@@ -7,6 +7,14 @@ namespace NeoDrawable
 {
     public class DrawableHorizontalArrow : DrawableShape
     {
+        public DrawableHorizontalArrow() { }
+
+        public DrawableHorizontalArrow(Point2D startPoint, Point2D endPoint)
+        {
+            _startPoint = startPoint;
+            _endPoint = endPoint;
+        }
+
         public DrawableHorizontalArrow(Point2D startPoint, Point2D endPoint,
             Brush backgroundBrush, Border border)
         {
@@ -46,6 +54,11 @@ namespace NeoDrawable
         public override Clonable GetOriginalInstance()
         {
             return new DrawableHorizontalArrow(_backgroundBrush, _border);
+        }
+
+        public override string GetDrawableType()
+        {
+            return "Drawable Horizontal Arrow";
         }
     }
 }

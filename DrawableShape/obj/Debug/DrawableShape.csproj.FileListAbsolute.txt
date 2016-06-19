@@ -13,3 +13,18 @@ C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\InterfaceContract.pd
 C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\bin\Debug\Point2D.pdb
 C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\obj\Debug\DrawableShape.dll
 C:\Users\ADMIN\Desktop\Neo Paint DS\DrawableShape\obj\Debug\DrawableShape.pdb
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\DrawableShape.dll
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\DrawableShape.pdb
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\Brush.dll
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\Color.dll
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\DrawableObject.dll
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\InterfaceContract.dll
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\Point2D.dll
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\Brush.pdb
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\Color.pdb
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\DrawableObject.pdb
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\InterfaceContract.pdb
+D:\Neo-Paint-DS\DrawableShape\bin\Debug\Point2D.pdb
+D:\Neo-Paint-DS\DrawableShape\obj\Debug\DrawableShape.csprojResolveAssemblyReference.cache
+D:\Neo-Paint-DS\DrawableShape\obj\Debug\DrawableShape.dll
+D:\Neo-Paint-DS\DrawableShape\obj\Debug\DrawableShape.pdb

@@ -7,6 +7,14 @@ namespace NeoDrawable
 {
     public class DrawableCircle : DrawableShape
     {
+        public DrawableCircle() { }
+
+        public DrawableCircle(Point2D startPoint, Point2D endPoint)
+        {
+            _startPoint = startPoint;
+            _endPoint = endPoint;
+        }
+
         public DrawableCircle(Point2D startPoint, Point2D endPoint,
             Brush backgroundBrush, Border border)
         {
@@ -59,6 +67,11 @@ namespace NeoDrawable
         public override Clonable GetOriginalInstance()
         {
             return new DrawableCircle(_backgroundBrush, _border);
+        }
+
+        public override string GetDrawableType()
+        {
+            return "Drawable Circle";
         }
     }
 }

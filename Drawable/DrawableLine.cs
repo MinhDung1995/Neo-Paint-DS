@@ -7,6 +7,14 @@ namespace NeoDrawable
 {
     public class DrawableLine : DrawableShape
     {
+        public DrawableLine() { }
+
+        public DrawableLine(Point2D startPoint, Point2D endPoint)
+        {
+            _startPoint = startPoint;
+            _endPoint = endPoint;
+        }
+
         public DrawableLine(Point2D startPoint, Point2D endPoint,
             Brush backgroundBrush, Border border)
         {
@@ -35,6 +43,11 @@ namespace NeoDrawable
         public override Clonable GetOriginalInstance()
         {
             return new DrawableLine(_backgroundBrush, _border);
+        }
+
+        public override string GetDrawableType()
+        {
+            return "Drawable Line";
         }
     }
 }

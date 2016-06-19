@@ -15,3 +15,20 @@ C:\Users\ADMIN\Desktop\Neo Paint DS\DrawablePicture\bin\Debug\InterfaceContract.
 C:\Users\ADMIN\Desktop\Neo Paint DS\DrawablePicture\bin\Debug\Point2D.pdb
 C:\Users\ADMIN\Desktop\Neo Paint DS\DrawablePicture\obj\Debug\DrawablePicture.dll
 C:\Users\ADMIN\Desktop\Neo Paint DS\DrawablePicture\obj\Debug\DrawablePicture.pdb
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\DrawablePicture.dll
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\DrawablePicture.pdb
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\Brush.dll
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\Color.dll
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\DrawableObject.dll
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\DrawableShape.dll
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\InterfaceContract.dll
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\Point2D.dll
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\Brush.pdb
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\Color.pdb
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\DrawableObject.pdb
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\DrawableShape.pdb
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\InterfaceContract.pdb
+D:\Neo-Paint-DS\DrawablePicture\bin\Debug\Point2D.pdb
+D:\Neo-Paint-DS\DrawablePicture\obj\Debug\DrawablePicture.csprojResolveAssemblyReference.cache
+D:\Neo-Paint-DS\DrawablePicture\obj\Debug\DrawablePicture.dll
+D:\Neo-Paint-DS\DrawablePicture\obj\Debug\DrawablePicture.pdb

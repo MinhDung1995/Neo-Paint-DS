@@ -7,6 +7,14 @@ namespace NeoDrawable
 {
     public class DrawableStar : DrawableShape
     {
+        public DrawableStar() { }
+
+        public DrawableStar(Point2D startPoint, Point2D endPoint)
+        {
+            _startPoint = startPoint;
+            _endPoint = endPoint;
+        }
+
         public DrawableStar(Point2D startPoint, Point2D endPoint,
             Brush backgroundBrush, Border border)
         {
@@ -49,6 +57,11 @@ namespace NeoDrawable
         public override Clonable GetOriginalInstance()
         {
             return new DrawableStar(_backgroundBrush, _border);
+        }
+
+        public override string GetDrawableType()
+        {
+            return "Drawable Star";
         }
     }
 }

@@ -7,6 +7,15 @@ namespace NeoDrawable
 {
     public class DrawableTriangle : DrawableShape
     {
+        public DrawableTriangle() { }
+
+        public DrawableTriangle(Point2D startPoint, Point2D endPoint)
+        {
+            _startPoint = startPoint;
+            _endPoint = endPoint;
+        }
+
+
         public DrawableTriangle(Point2D startPoint, Point2D endPoint,
             Brush backgroundBrush, Border border)
         {
@@ -40,6 +49,11 @@ namespace NeoDrawable
         public override Clonable GetOriginalInstance()
         {
             return new DrawableTriangle(_backgroundBrush, _border);
+        }
+
+        public override string GetDrawableType()
+        {
+            return "Drawable Triangle";
         }
     }
 }
